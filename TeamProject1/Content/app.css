@@ -1,0 +1,826 @@
+﻿/**
+    Mudrak Patel and Javid Niftaliyeve
+    COMP229 Project
+*/
+
+
+/* custom css goes here */
+/**
+    Styling for Default.aspx goes here
+*/
+
+/*
+    Media query for responsiveness of div tags 
+*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 610px) {
+    #fifa17Link {
+        width:250px;
+        margin-left:auto;
+        margin-right:auto;
+        background-size:contain;
+    }
+
+    #counterStrikeLink {
+        width:250px;
+        margin-left:auto;
+        margin-right:auto;
+        background-size:contain;
+    }
+
+    #battleFieldLink {
+        width:250px;
+        margin-left:auto;
+        margin-right:auto;
+        background-size:contain;
+    }
+
+    #callOfDutyLink {
+        width:250px;
+        margin-left:auto;
+        margin-right:auto;
+        background-size:contain;
+    }
+}
+
+
+body { 
+    /* Margin bottom by footer height */
+  margin-bottom: 80px;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+/* Pagination Style
+-------------------------------------------------- */
+
+.pagination-ys {
+    /*display: inline-block;*/
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination-ys table > tbody > tr > td {
+    display: inline;
+}
+
+.pagination-ys table > tbody > tr > td > a ,
+.pagination-ys table > tbody > tr > td > span {
+    position: relative;
+    float: left;
+    padding: 8px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #dd4814;
+    background-color: #f5f2f2;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.pagination-ys table > tbody > tr > td > a ,
+.pagination-ys table > tbody > tr > td > span {
+    position: relative;
+    float: left;
+    padding: 8px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    margin-left: -1px;
+    z-index: 2;
+    color: #aea79f;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.pagination-ys table > tbody > tr > td:first-child > a,
+.pagination-ys table > tbody > tr > td:first-child > span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.pagination-ys table > tbody > tr > td:last-child > a,
+.pagination-ys table > tbody > tr > td:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.pagination-ys table > tbody > tr > td > a:hover,
+.pagination-ys table > tbody > tr > td > span:hover,
+.pagination-ys table > tbody > tr > td > a:focus,
+.pagination-ys table > tbody > tr > td > span:focus {
+    color: #97310e;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.gameImagesDiv{
+    height:auto;
+    width:auto;
+}
+
+#fifa17Link{
+    background-image:url(../assets/images/fifaTextLogo.png);
+    background-color:#f7e842;
+    background-size:contain;
+    background-position-x:center;
+}
+
+#callOfDutyLink{
+    background-image:url('../Assets/Images/callofdutyTextLogo.jpg');
+    background-color:white;
+    background-size:contain;
+    background-position-x:center;
+}
+
+#counterStrikeLink{
+    background-image:url(../Assets/Images/counterstrike.png);
+    background-color:#f77529;
+    background-size:contain;
+    background-position-x:center;
+}
+
+#battleFieldLink{
+    background-image:url(../Assets/Images/battlefieldTextLogo.png);
+    background-color:black;
+    background-size:contain;
+    background-position-x:center;
+
+}
+
+.gameImageLinks{
+    border:3px solid black;
+    background-repeat:no-repeat;
+    margin-left:auto;
+    margin-right:auto;
+    left:50%;
+    right:50%;
+    height:100px;
+    width:600px;
+    display:list-item;
+    margin-top:6px;
+    transition-property:box-shadow;
+    transition-duration:0.3s;
+    transition-delay:0.01s;
+}
+
+.gameImageLinks:hover{
+ -webkit-box-shadow: 0px 31px 70px 3px rgba(117,145,214,1);
+-moz-box-shadow: 0px 31px 70px 3px rgba(117,145,214,1);
+box-shadow: 0px 31px 70px 3px rgba(117,145,214,1);
+}
+/**
+    Styling for fifa17Page.aspx here
+*/
+
+.fifaContentDiv{
+    border:3px solid black;
+    height:400px;
+    width:700px;
+    float:none;
+    margin-right:5px;
+    display:compact;
+    float:right;
+    position:relative;
+    z-index:90;
+    background-color:white;    
+    -webkit-margin-top-collapse:separate;
+}
+
+.fifaTextDiv{
+    height:60px;
+    width:550px;
+    text-align:center;
+    padding-bottom:20px;
+    font-family:Verdana;
+    font-size:35px;
+    border:3px solid black;
+    display:block;
+}
+
+.fifaImageDiv{
+    border:3px solid black;
+    height:400px;
+    width:550px;
+    background-image:url(../Assets/Images/fifa17Background.jpg);
+    background-size:contain;
+    display:inline-block;
+}
+
+.fifaTextDivNew{
+    display:none;
+}
+
+/*
+    Media query for responsiveness of div tags
+*/
+@media screen and (max-width:1111px){
+    .fifaImageDiv{
+        background-image:url(../Assets/Images/fifa17.jpg);
+        height:383px;
+        width:250px;
+    }
+
+    .fifaTextDiv{
+        display:none;
+    }
+
+    .fifaTextDivNew{
+        height:60px;
+        width:700px;
+        float:right;
+        margin-right:5px;
+        text-align:center;
+        padding-bottom:20px;
+        font-family:Verdana;
+        font-size:35px;
+        border:3px solid black;
+        display:inline-block;
+    }
+
+    .fifaContentDiv{
+        border:3px solid black;
+        height:400px;
+        width:700px;
+        float:none;
+        margin-right:5px;
+        margin-top:-320px;
+        display:inline-block;
+        float:right;
+        position:relative;
+        z-index:90;
+        background-color:white;    
+        /*-webkit-margin-top-collapse:separate;*/
+    }
+}
+
+@media screen and (max-width:960px){
+    .fifaTextDiv{
+        display:none;
+    }
+
+    .fifaTextDivNew{
+        display:none;
+    }
+
+    .fifaImageDiv{
+        display:none;
+    }
+
+    .fifaContentDiv{
+        margin-top:6px;
+    }
+
+}
+
+/*
+    callOfDutyPage.aspx styles goes here
+*/
+.callOfDutyContentDiv{
+    border:3px solid black;
+    height:400px;
+    width:700px;
+    float:none;
+    margin-right:5px;
+    display:compact;
+    float:right;
+    position:relative;
+    z-index:90;
+    background-color:white;    
+    -webkit-margin-top-collapse:separate;
+}
+
+.callOfDutyTextDiv{
+    height:60px;
+    width:550px;
+    text-align:center;
+    padding-bottom:20px;
+    font-family:Verdana;
+    font-size:35px;
+    border:3px solid black;
+    display:block;
+}
+
+.callOfDutyImageDiv{
+    border:3px solid black;
+    height:400px;
+    width:550px;
+    background-image:url(../Assets/Images/callOfDutyBigImage.jpg);
+    display:inline-block;
+    background-size:cover;
+    background-position:center;
+}
+
+.callOfDutyTextDivNew{
+    display:none;
+}
+/*
+    code for responsive div tags on callOfDutyPage.aspx
+*/
+@media screen and (max-width:1111px){
+    .callOfDutyImageDiv{
+        background-image:url(../Assets/Images/callOfDuty.jpg);
+        height:383px;
+        width:250px;
+    }
+
+    .callOfDutyTextDiv{
+        display:none;
+    }
+
+    .callOfDutyTextDivNew{
+        height:60px;
+        width:700px;
+        float:right;
+        margin-right:5px;
+        text-align:center;
+        padding-bottom:20px;
+        font-family:Verdana;
+        font-size:35px;
+        border:3px solid black;
+        display:inline-block;
+    }
+
+    .callOfDutyContentDiv{
+        border:3px solid black;
+        height:400px;
+        width:700px;
+        float:none;
+        margin-right:5px;
+        margin-top:-320px;
+        display:inline-block;
+        float:right;
+        position:relative;
+        z-index:90;
+        background-color:white;    
+        /*-webkit-margin-top-collapse:separate;*/
+    }
+}
+
+@media screen and (max-width:960px){
+    .callOfDutyTextDiv{
+        display:none;
+    }
+
+    .callOfDutyTextDivNew{
+        display:none;
+    }
+
+    .callOfDutyImageDiv{
+        display:none;
+    }
+
+    .callOfDutyContentDiv{
+        margin-top:6px;
+    }
+
+}
+
+/*
+    Styles for counterStrikePage.aspx goes here
+*/
+
+.counterStrikeContentDiv{
+    /*border:3px solid black;*/
+    height:400px;
+    width:700px;
+    float:none;
+    margin-right:5px;
+    display:compact;
+    float:right;
+    position:relative;
+    z-index:90;
+    background-color:white;    
+    -webkit-margin-top-collapse:separate;
+    /*text-align:center;*/
+    /*padding-top:10px;
+    padding-left:10px;*/
+}
+
+.CounterStrikeGridView{
+    height:400px;
+    width:700px;
+    text-align:center;
+}
+
+.CS_WEEK_NUMBER{
+    font-size:25px;
+    border:none;
+    background-color:#16b17d;
+    color:white;
+}
+
+.CS_TEAM_1_ID{
+    font-size:25px;
+    border:none;
+    background-color:#721feb;
+    color:white;
+}
+
+.CS_TEAM_1_Score{
+    font-size:25px;
+    border:none;
+    background-color:#1955b5;
+    color:white;
+}
+
+.CS_TEAM_2_Score{
+    font-size:25px;
+    border:none;
+    background-color:#c419c6;
+    color:white;
+}
+
+.TEAM_2_ID{
+    font-size:25px;
+    border:none;
+    background-color:#565658;
+    color:white;
+}
+
+.CS_GRID_HEADER{
+    font-size:25px;
+    border:none;
+    background-color:#a0ed23;
+    color:white;
+}
+
+.counterStrikeTextDiv{
+    height:60px;
+    width:550px;
+    text-align:center;
+    padding-bottom:20px;
+    font-family:Verdana;
+    font-size:35px;
+    border:3px solid black;
+    display:block;
+}
+
+.counterStrikeImageDiv{
+    border:3px solid black;
+    height:400px;
+    width:550px;
+    background-image:url(../Assets/Images/counterStrikeBigImage.jpg);
+    display:inline-block;
+    background-size:cover;
+    background-position:center;
+}
+
+.counterStrikeTextDivNew{
+    display:none;
+}
+/*
+    Styles for responsible div tags in counterStrikePage.aspx
+*/
+@media screen and (max-width:1111px){
+    .counterStrikeImageDiv{
+        background-image:url(../Assets/Images/counterStrike.jpg);
+        height:383px;
+        width:250px;
+    }
+
+    .counterStrikeTextDiv{
+        display:none;
+    }
+
+    .counterStrikeTextDivNew{
+        height:60px;
+        width:700px;
+        float:right;
+        margin-right:5px;
+        text-align:center;
+        padding-bottom:20px;
+        font-family:Verdana;
+        font-size:35px;
+        border:3px solid black;
+        display:inline-block;
+    }
+
+    .counterStrikeContentDiv{
+        border:3px solid black;
+        height:400px;
+        width:700px;
+        float:none;
+        margin-right:5px;
+        margin-top:-320px;
+        display:inline-block;
+        float:right;
+        position:relative;
+        z-index:90;
+        background-color:white;    
+        /*-webkit-margin-top-collapse:separate;*/
+
+    }
+}
+
+@media screen and (max-width:960px){
+    .counterStrikeTextDiv{
+        display:none;
+    }
+
+    .counterStrikeTextDivNew{
+        display:none;
+    }
+
+    .counterStrikeImageDiv{
+        display:none;
+    }
+
+    .counterStrikeContentDiv{
+        margin-top:6px;
+    }
+
+}
+
+/*
+    Styles for battleFieldPage.aspx goes here
+*/
+
+
+/*
+    Styles for battleFieldPage.aspx div tags responsiveness goes here
+*/
+.battleFieldContentDiv{
+    border:3px solid black;
+    height:400px;
+    width:700px;
+    float:none;
+    margin-right:5px;
+    display:compact;
+    float:right;
+    position:relative;
+    z-index:90;
+    background-color:white;    
+    -webkit-margin-top-collapse:separate;
+}
+
+.battleFieldTextDiv{
+    height:60px;
+    width:550px;
+    text-align:center;
+    padding-bottom:20px;
+    font-family:Verdana;
+    font-size:35px;
+    border:3px solid black;
+    display:block;
+}
+
+.battleFieldImageDiv{
+    border:3px solid black;
+    height:400px;
+    width:550px;
+    background-image:url(../Assets/Images/battlefieldBigImage.jpg);
+    display:inline-block;
+    background-size:cover;
+    background-position:center;
+}
+
+.battleFieldTextDivNew{
+    display:none;
+}
+
+@media screen and (max-width:1111px){
+    .battleFieldImageDiv{
+        background-image:url(../Assets/Images/battlefield.jpg);
+        height:383px;
+        width:250px;
+    }
+
+    .battleFieldTextDiv{
+        display:none;
+    }
+
+    .battleFieldTextDivNew{
+        height:60px;
+        width:700px;
+        float:right;
+        margin-right:5px;
+        text-align:center;
+        padding-bottom:20px;
+        font-family:Verdana;
+        font-size:35px;
+        border:3px solid black;
+        display:inline-block;
+    }
+
+    .battleFieldContentDiv{
+        border:3px solid black;
+        height:400px;
+        width:700px;
+        float:none;
+        margin-right:5px;
+        margin-top:-320px;
+        display:inline-block;
+        float:right;
+        position:relative;
+        z-index:90;
+        background-color:white;    
+        /*-webkit-margin-top-collapse:separate;*/
+
+    }
+}
+
+@media screen and (max-width:960px){
+    .battleFieldTextDiv{
+        display:none;
+    }
+
+    .battleFieldTextDivNew{
+        display:none;
+    }
+
+    .battleFieldImageDiv{
+        display:none;
+    }
+
+    .battleFieldContentDiv{
+        margin-top:6px;
+    }
+
+}
+
+/*
+    Styles for LoginSignUpPage.aspx goes here
+*/
+.loginDiv{
+    border-radius:5px 5px 5px 5px;
+    border:3px solid #78787d;
+    width:775px;
+    height:65px;
+    display:block;
+    padding-left:10px;
+    margin-top:-15px;
+    position:relative;
+    left:20%;
+    
+    /*left:50%;*/
+}
+
+.usernameTextBox{
+    border:3px #78787d solid;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    font-size:25px;
+}
+
+.passwordTextBox{
+    border:3px #78787d solid;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    font-size:25px;
+}
+
+.loginButton{
+    background-color:white;
+    border:3px solid #78787d;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    font-size:25px;
+    transition-property:background-color,color;
+    transition-duration:0.6s;
+    transition-delay:0.1s;
+}
+
+.loginButton:hover {
+    color:white;
+    background-color:#78787d;
+}
+
+.signupDiv{
+    border-radius:5px 5px 5px 5px;
+    border:3px solid #78787d;
+    margin-top:5px;
+    width:475px;
+    height:auto;
+    display:list-item;
+    padding-left:15px;
+    padding-bottom:10px;
+    position:relative;
+    left:30%;
+}
+
+.firstNameSignUpTextBox{
+    border:3px #78787d solid;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    width:425px;
+    font-size:25px;
+    display:list-item;
+}
+
+.lastNameSignUpTextBox{
+    border:3px #78787d solid;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    width:425px;
+    height:40px;
+    font-size:25px;
+    display:list-item;
+}
+
+.passwordSignUpTextBox{
+    border:3px #78787d solid;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    width:425px;
+    font-size:25px;
+    display:list-item;
+}
+
+.phoneSignUpTextBox{
+    border:3px #78787d solid;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    width:425px;
+    font-size:25px;
+    display:list-item;
+}
+
+.emailSignUpTextBox{
+    border:3px #78787d solid;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    width:425px;
+    font-size:25px;
+    display:list-item;
+}
+
+.signUpButton{
+    background-color:white;
+    border:3px solid #34fc04;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    width:210px;
+    font-size:25px;
+    transition-property:background-color;
+    transition-duration:0.6s;
+    transition-delay:0.1s;
+}   
+
+.signUpButton:hover {
+    color:white;
+    background-color:#34fc04;
+}
+
+.cancelButton{
+    background-color:white;
+    border:3px solid red;
+    margin-top:8px;
+    margin-left:6px;
+    border-radius:5px 5px 5px 5px;
+    height:40px;
+    width:210px;
+    font-size:25px;
+    transition-property:background-color,color;
+    transition-duration:0.6s;
+    transition-delay:0.1s;
+}   
+
+.cancelButton:hover {
+    color:white;
+    background-color:red;
+}
+
+@media screen and (max-width:1111px){
+    .signupDiv{
+        left:0%;
+    }
+}

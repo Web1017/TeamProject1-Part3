@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[GameTable] (
+   [GAMEID]      INT        IDENTITY (1, 1) NOT NULL,
+   [WEEK_NUMBER] NCHAR (2)  NOT NULL,
+   [TEAM_1_ID]   NCHAR (10) NOT NULL,
+   [TEAM_2_ID]   NCHAR (10) NOT NULL,
+    [TEAM_1_Score]   NCHAR (10) NOT NULL,
+    [TEAM_2_Score]   NCHAR (10) NOT NULL,
+
+   PRIMARY KEY CLUSTERED ([GAMEID] ASC)
+);
