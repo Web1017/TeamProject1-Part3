@@ -140,9 +140,12 @@
     <Content Include="callOfDutyPage.aspx" />
     <Content Include="GameTrack\counterStrikePage.aspx" />
     <Content Include="fifa17Page.aspx" />
+    <Content Include="GameTrack\MainMenu.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LoginSignUpPage.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Register.aspx" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -229,6 +232,13 @@
     <Compile Include="fifa17Page.aspx.designer.cs">
       <DependentUpon>fifa17Page.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GameTrack\MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameTrack\MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -246,10 +256,24 @@
     <Compile Include="LoginSignUpPage.aspx.designer.cs">
       <DependentUpon>LoginSignUpPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\database_firewall_rules.cs" />
     <Compile Include="Models\GameContextAzure.cs" />
     <Compile Include="Models\GameTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

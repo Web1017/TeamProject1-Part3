@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <!--
-    Mudrak Patel and Javid Niftaliyeve
+    Mudrak Patel and Javid Niftaliyev
     COMP229 Project
      -->
 
