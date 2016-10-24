@@ -41,7 +41,7 @@ namespace TeamProject1
                 authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
 
                 //Redirect the user to the mainMenu
-                Response.Redirect("~/GameTrack/MainMenu.aspx");
+                Response.Redirect("~/Default.aspx");
             
             }
             else // user if not found
@@ -53,6 +53,11 @@ namespace TeamProject1
 
 
 
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
 
         }
     }

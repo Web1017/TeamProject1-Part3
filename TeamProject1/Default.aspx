@@ -8,10 +8,10 @@
      -->
 
     <div class="gameImagesDiv">
-        <a href="fifa17Page.aspx" class="gameImageLinks" id="fifa17Link"></a>
-        <a href="callOfDutyPage.aspx" class="gameImageLinks" id="callOfDutyLink"></a>
+        <a href="/GameTrack/fifa17Page.aspx" class="gameImageLinks" id="fifa17Link"></a>
+        <a href="/GameTrack/callOfDutyPage.aspx" class="gameImageLinks" id="callOfDutyLink"></a>
         <a href="/GameTrack/counterStrikePage.aspx" class="gameImageLinks" id="counterStrikeLink"></a>
-        <a href="battleFieldPage.aspx" class="gameImageLinks" id="battleFieldLink"></a>
+        <a href="/GameTrack/battleFieldPage.aspx" class="gameImageLinks" id="battleFieldLink"></a>
     </div>
 
 </asp:Content>

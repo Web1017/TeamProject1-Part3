@@ -136,11 +136,10 @@
     <Content Include="Assets\Images\counterstrikeBigImage.jpg" />
     <Content Include="Assets\Images\fifa17Background.jpg" />
     <Content Include="Assets\Images\fifaTextLogo.png" />
-    <Content Include="battleFieldPage.aspx" />
-    <Content Include="callOfDutyPage.aspx" />
+    <Content Include="GameTrack\battleFieldPage.aspx" />
+    <Content Include="GameTrack\callOfDutyPage.aspx" />
     <Content Include="GameTrack\counterStrikePage.aspx" />
-    <Content Include="fifa17Page.aspx" />
-    <Content Include="GameTrack\MainMenu.aspx" />
+    <Content Include="GameTrack\fifa17Page.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LoginSignUpPage.aspx" />
     <Content Include="Logout.aspx" />
@@ -190,18 +189,18 @@
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="battleFieldPage.aspx.cs">
+    <Compile Include="GameTrack\battleFieldPage.aspx.cs">
       <DependentUpon>battleFieldPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="battleFieldPage.aspx.designer.cs">
+    <Compile Include="GameTrack\battleFieldPage.aspx.designer.cs">
       <DependentUpon>battleFieldPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="callOfDutyPage.aspx.cs">
+    <Compile Include="GameTrack\callOfDutyPage.aspx.cs">
       <DependentUpon>callOfDutyPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="callOfDutyPage.aspx.designer.cs">
+    <Compile Include="GameTrack\callOfDutyPage.aspx.designer.cs">
       <DependentUpon>callOfDutyPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
@@ -225,19 +224,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="fifa17Page.aspx.cs">
+    <Compile Include="GameTrack\fifa17Page.aspx.cs">
       <DependentUpon>fifa17Page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="fifa17Page.aspx.designer.cs">
+    <Compile Include="GameTrack\fifa17Page.aspx.designer.cs">
       <DependentUpon>fifa17Page.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GameTrack\MainMenu.aspx.cs">
-      <DependentUpon>MainMenu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GameTrack\MainMenu.aspx.designer.cs">
-      <DependentUpon>MainMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

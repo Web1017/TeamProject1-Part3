@@ -1,18 +1,17 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="TeamProject1.Register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container">
-        <div class="row">
+    <div class="container"> 
             <div class="col-md-offset-4 col-md-4">
                  <div class="alert alert-danger" id="AlertFlash" runat="server" visible="false">
                     <asp:Label runat="server" ID="StatusLabel" />
-                </div>
-
-                <h1>Game Registration Page</h1>
+                 </div>
+             
+                <h1>Registration Page</h1>
                 <h5>All Fields are Required</h5>
                 <br />
-                <div class="panel panel-primary">
+                <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h1 class="panel-title"><i class="fa fa-user-plus fa-lg"></i> Register</h1>
+                        <h1 class="panel-title"><i class="fa fa-registered fa-lg"></i> Registration Form</h1>
                     </div>
                     <div class="panel-body">
                         <div class="form-group">
