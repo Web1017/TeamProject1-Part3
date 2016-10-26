@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <!--
-    Mudrak Patel and Javid Niftaliyeve
+    Mudrak Patel and Javid Niftaliyev
     COMP229 Project
      -->
     <div class="counterStrikeImageDiv"></div>
@@ -20,6 +20,7 @@
                 <asp:BoundField DataField="TEAM_1_Score" HeaderText="TEAM 1 SCORE" Visible="true" ItemStyle-CssClass="CS_TEAM_1_Score" />
                 <asp:BoundField DataField="TEAM_2_Score" HeaderText="TEAM 2 SCORE" Visible="true" ItemStyle-CssClass="CS_TEAM_2_Score" />
                 <asp:BoundField DataField="TEAM_2_ID" HeaderText="TEAM 2" Visible="true" ItemStyle-CssClass="TEAM_2_ID" />
+                <asp:BoundField DataField="GAME_SPECTATORS" HeaderText="Aud." Visible="true" ItemStyle-CssClass="TEAM_2_Score" />
             </Columns>
         </asp:GridView>
 

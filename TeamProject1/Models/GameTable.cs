@@ -31,5 +31,14 @@ namespace TeamProject1.Models
         [Required]
         [StringLength(10)]
         public string TEAM_2_Score { get; set; }
+
+
+        [Required]
+        [StringLength(45)]
+        public string GAME_NAME { get; set; }
+
+        [Required]
+        [StringLength(7)]
+        public string GAME_SPECTATORS { get; set; }
     }
 }

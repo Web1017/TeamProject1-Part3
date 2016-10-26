@@ -33,6 +33,7 @@ namespace TeamProject1
             using(GameContextAzure db = new GameContextAzure())
             {
                 var csData = (from cStrike in db.GameTable
+                              where cStrike.GAME_NAME.Equals("CounterStrike")
                               select cStrike);
                 CounterStrikeGridView.DataSource = csData.ToList();
                 CounterStrikeGridView.DataBind();
